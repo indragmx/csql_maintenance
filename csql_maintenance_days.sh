@@ -26,7 +26,4 @@ while IFS= read -r instance; do
   output=""
 done <<< "$instance_names"
 
-# Write the output to a single line in a text file
-#echo "$output" > cloud_sql_info.txt
-
 echo "Successfully retrieved Cloud SQL instance names and maintenance versions and saved to cloud_sql_info.txt"
